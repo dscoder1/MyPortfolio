@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 id="heading">Portfolio</h1>
+      <div>
+        <ul class="navContent">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about" id="about-link">About</a></li>
+          <li>
+            <a href="https://dscoder1.github.io/My-All-Project/">Projects</a>
+          </li>
+          <li><a href="#contact" id="contact-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <div class="left">
+        <p id="name">Hii, I'm Divya Shakti</p>
+        <br />
+        <div class="text">
+          <p id="what">Full Stack Developer | Python App Developer</p>
+        </div>
+        <br />
+      </div>
+      <div class="right">
+        <div class="rightContent">
+          <div class="circle">
+            <img
+              src="https://wallpapers.com/images/hd/cool-neon-blue-profile-picture-u9y9ydo971k9mdcf.jpg"
+              alt="portfolio images"
+              id="portimage"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="about">
+      <br />
+      <br />
+      <h1 id="aboutTitle">About Me!</h1>
+
+      <div class="about-page">
+        <p>
+          As a BCA student in my second year with a strong interest in web
+          development, I am eager to showcase my skills and experiences through
+          a well-crafted portfolio. My portfolio will begin with an engaging
+          introduction that highlights my background, my passion for web
+          development, and the technical skills I have acquired, such as HTML,
+          CSS, JavaScript, and various frameworks like React and Node.js.
+        </p>
+        <br />
+        <p>
+          My experiences as a leader in several hackathons will also be
+          prominently featured. I will describe the projects I led, the
+          technologies we utilized, and any accolades we received, emphasizing
+          my ability to work collaboratively and guide a team under pressure.
+          This section will highlight significant team projects, providing links
+          to repositories or live demos where applicable.
+        </p>
+        <br />
+        <p>
+          To further enhance my portfolio, I will include a section detailing my
+          education, including relevant coursework and any certifications I have
+          earned in web development. I will also list my technical skills,
+          covering programming languages, frameworks, and tools I am proficient
+          in, such as Git and Docker.
+        </p>
+        <br />
+
+        <br /><br />
+        <ul id="icons">
+          <li>
+            <a href="https://github.com/dscoder1" id="github">
+              ><img
+                src="github.png"
+                alt="github icon"
+                id="githubimg"
+              />Github</a
+            >
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/divyashakti510" id="linkedin"
+              ><img
+                src="linkedin.png"
+                alt="linkedin icon"
+                id="linkedinimg"
+              />LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="" id="insta"
+              ><img
+                src="instagram.png"
+                alt="instagram icon"
+                id="instaimg"
+              />InstaGram</a
+            >
+          </li>
+          <li>
+            <a href="" id="youtube"
+              ><img src="youtube.png" alt="youtube icon" id="ytimg" />Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 id="ContactUs">Contact Us</h1>
+
+      <div class="contact-container">
+        <form id="contact-form" action="#" method="POST">
+          <label for="Contactname">Name:</label>
+          <input type="text" id="Contactname" name="Contactname" required />
+
+          <label for="Contactemail">Email:</label>
+          <input type="email" id="Contactemail" name="Contactemail" required />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="Contactmessage"
+            name="Contactmessage"
+            required
+          ></textarea>
+
+          <button id="submitBtn" type="submit" onclick="sendContactMail()">
+            Send Message
+          </button>
+        </form>
+        <div id="response-message"></div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
