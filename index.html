@@ -26,6 +26,8 @@
     </div>
     <div class="main">
       <div class="left">
+        <p id="content">This Is My Portfolio Website</p>
+        <br />
         <p id="name">Hii, I'm Divya Shakti</p>
         <br />
         <div class="text">
@@ -46,38 +48,53 @@
       </div>
     </div>
     <section id="about">
-      <br />
-      <br />
-      <h1 id="aboutTitle">About Me!</h1>
+  <div class="about-container">
+    <!-- Personal Introduction -->
+    <div class="about-card">
+      <h2>👨‍💻 About Me</h2>
+      <p>
+        I'm Divya Shakti, a second-year BCA student passionate about crafting digital experiences through web development.
+        I specialize in building modern web apps using <strong>HTML, CSS, JavaScript, React.js, and Node.js</strong>. 
+        My journey is driven by curiosity and creativity, and I aim to solve real-world problems with code.
+      </p>
+    </div>
 
-      <div class="about-page">
-        <p>
-          As a BCA student in my second year with a strong interest in web
-          development, I am eager to showcase my skills and experiences through
-          a well-crafted portfolio. My portfolio will begin with an engaging
-          introduction that highlights my background, my passion for web
-          development, and the technical skills I have acquired, such as HTML,
-          CSS, JavaScript, and various frameworks like React and Node.js.
-        </p>
-        <br />
-        <p>
-          My experiences as a leader in several hackathons will also be
-          prominently featured. I will describe the projects I led, the
-          technologies we utilized, and any accolades we received, emphasizing
-          my ability to work collaboratively and guide a team under pressure.
-          This section will highlight significant team projects, providing links
-          to repositories or live demos where applicable.
-        </p>
-        <br />
-        <p>
-          To further enhance my portfolio, I will include a section detailing my
-          education, including relevant coursework and any certifications I have
-          earned in web development. I will also list my technical skills,
-          covering programming languages, frameworks, and tools I am proficient
-          in, such as Git and Docker.
-        </p>
-        <br />
+    <!-- Leadership & Achievements -->
+    <div class="about-card">
+      <h2>🏆 Leadership & Achievements</h2>
+      <ul>
+        <li>Participated in <strong>20+ tech and cultural events</strong> at institutions including <strong>IITs, NITs, Amity, IIT-BHU</strong>, and more.</li>
+        <li>Led <strong>10+ events and hackathons</strong> as team leader, including coding competitions and innovation challenges.</li>
+        <li>Winner in <strong>5+ prestigious competitions</strong> such as hackathons at <strong>IIT-BHU</strong> and <strong>Amity University</strong>.</li>
+        <li>Worked as a <strong>volunteer in national-level fests</strong> at IITs, NITs, and other universities, gaining teamwork and coordination skills.</li>
+      </ul>
+    </div>
 
+    <!-- Technical Skills -->
+    <div class="about-card">
+      <h2>💡 Technical Skills</h2>
+      <p>
+        I’m proficient in a wide range of technologies:
+      </p>
+      <ul class="skills-list">
+        <li><strong>Languages:</strong> Java, JavaScript, C, C++, Python, PHP</li>
+        <li><strong>Frontend:</strong> HTML5, CSS3, React.js, Bootstrap</li>
+        <li><strong>Backend:</strong> Node.js, Express.js, PHP</li>
+        <li><strong>Databases:</strong> MongoDB, MySQL</li>
+        <li><strong>Others:</strong> Team Leadership, Communication, Interpersonal</li>
+      </ul>
+    </div>
+
+    
+    <div class="about-card">
+      <h2>🌟 My Mission</h2>
+      <p>
+        I believe in continuous learning and collaboration. My portfolio reflects my evolution as a developer and a team leader. 
+        I’m actively looking for <strong>internship and freelance opportunities</strong> to contribute to impactful projects and sharpen my skills.
+      </p>
+      <p>Let’s connect and build something great together!</p>
+    </div>
+  </div>
         <br /><br />
         <ul id="icons">
           <li>
@@ -113,6 +130,255 @@
             >
           </li>
         </ul>
+      </div>
+    </section>
+    <section id="top-projects">
+      <h1 class="section-title">Top Projects</h1>
+      <div class="projects-container">
+        <!-- Repeat this block for each project -->
+        <div class="project-card">
+          <h2 class="project-title">Swachh Bharat</h2>
+          <div class="project-images">
+            <img src="images/SwachhBharat1.png" alt="Swachh Bharat Project" />
+            <img src="images/SwachhBharat2.png" alt="Swachh Bharat Project" />
+            <img src="images/SwachhBharat3.png" alt="Swachh Bharat Project" />
+            <img src="images/SwachhBharat4.png" alt="Swachh Bharat Project" />
+          </div>
+          <p class="project-desc">
+            Developed a Smart City Management System using React.js, Node.js,
+            and MongoDB to enable citizens to report urban issues like waste,
+            water quality, and infrastructure problems. Implemented real-time
+            location-based reporting with SMS notifications and Air Quality
+            Index (AQI) updates. Integrated secure user authentication,
+            complaint categorization, and fraud detection with account
+            suspension logic. Enabled analytics for issue trends, helping
+            authorities prioritize responses and enhance urban management
+            efficiency.
+          </p>
+          <a
+            href="https://github.com/yourusername/project1"
+            target="_blank"
+            class="github-link"
+          >
+            View on GitHub
+          </a>
+        </div>
+        <div class="project-card">
+          <h2 class="project-title">AgroWorld</h2>
+          <div class="project-images">
+            <img src="images/AgroWorld1.png" alt="Agro World Project" />
+            <img src="images/AgroWorld2.png" alt="Agro World Project" />
+            <img src="images/AgroWorld3.png" alt="Agro World Project" />
+            <img src="images/AgroWorld4.png" alt="Agro World Project" />
+          </div>
+          <p class="project-desc">
+            Developed a MERN web platform enabling farmers to sell and purchase
+            agricultural products including seeds, crops, vegetables,
+            fertilizers, and pesticides. Implemented user roles for farmers,
+            delivery personnel, and admins with secure login and dynamic
+            dashboards. Integrated order placement, tracking, and allocation
+            system with real-time location and product management. Built an
+            admin panel to manage users, products, services, and delivery
+            operations efficiently.
+          </p>
+          <a
+            href="https://github.com/dscoder1/Agroworld"
+            target="_blank"
+            class="github-link"
+          >
+            View on GitHub
+          </a>
+        </div>
+        <div class="project-card">
+          <h2 class="project-title">SocioUse</h2>
+          <div class="project-images">
+            <img src="images/SocioUse1.png" alt="Socio Use Project" />
+            <img src="images/SocioUse2.png" alt="Socio Use Project" />
+            <img src="images/SocioUse3.png" alt="Socio Use Project" />
+            <img src="images/SocioUse4.png" alt="Socio Use Project" />
+          </div>
+          <p class="project-desc">
+            Built a full-featured real-time social media web app using the MERN
+            stack, enabling users to post, like, comment, and upload videos.
+            Implemented real-time chat and calling features, along with user
+            follow system and dynamic profile updates. Integrated social sharing
+            to platforms like Facebook, WhatsApp, LinkedIn, and Instagram.
+            Ensured seamless live updates across all features using sockets and
+            efficient state management.
+          </p>
+          <a
+            href="https://github.com/dscoder1/SocialMediaWebsite"
+            target="_blank"
+            class="github-link"
+          >
+            View on GitHub
+          </a>
+        </div>
+        <div class="project-card">
+          <h2 class="project-title">Alumni Student Mentorship</h2>
+          <div class="project-images">
+            <img src="images/Mentorship1.png" alt="Student Alumni Mentorship" />
+            <img src="images/Mentorship2.png" alt="Student Alumni Mentorship" />
+            <img src="images/Mentorship3.png" alt="Student Alumni Mentorship" />
+            <img src="images/Mentorship4.png" alt="Student Alumni Mentorship" />
+          </div>
+          <p class="project-desc">
+            Built an MERN alumni mentorship platform where students can access
+            curated job search playlists based on their interests. Enabled
+            secure one-on-one video calls between students and alumni using
+            unique session links. Developed an admin panel for managing student
+            and alumni profiles and monitoring platform activity. Designed the
+            system to enhance career guidance and streamline student-alumni
+            interaction.
+          </p>
+          <a
+            href="https://github.com/dscoder1/StudentAlumniMentorship"
+            target="_blank"
+            class="github-link"
+          >
+            View on GitHub
+          </a>
+        </div>
+        <div class="project-card">
+          <h2 class="project-title">Flood Alert</h2>
+          <div class="project-images">
+            <img src="images/Flood1.png" alt="Flood Alert Project" />
+            <img src="images/Flood2.png" alt="Flood Alert Project" />
+            <img src="images/Flood3.png" alt="Flood Alert Project" />
+            <img src="images/Flood4.png" alt="Flood Alert Project" />
+          </div>
+          <p class="project-desc">
+            Built a Flood Alert and Emergency Reporting Website enabling users
+            to send real-time alerts during critical flood situations to
+            security authorities. Integrated location tracking, video/audio
+            recording, and detailed user reporting for accurate emergency
+            response. Implemented a nearby places locator to assist users in
+            finding safe zones and shelters quickly. Added a secure contact form
+            for direct communication with emergency management organizations.
+          </p>
+          <a
+            href="https://dscoder1.github.io/Flood-Alert/"
+            target="_blank"
+            class="github-link"
+          >
+            View on GitHub
+          </a>
+        </div>
+        <div class="project-card">
+          <h2 class="project-title">Other Projects</h2>
+          <div class="project-images">
+            <img src="images/Project1.png" alt="Projects Image" />
+            <img src="images/Project2.png" alt="Projects Image" />
+            <img src="images/Project3.png" alt="Projects Image" />
+            <img src="images/Project4.png" alt="Projects Image" />
+          </div>
+          <p class="project-desc">
+            Developed multiple web applications including a code editor, voice
+            assistant, cricket info portal, news website, weather app, and movie
+            browser using modern web technologies. Used HTML, CSS, JavaScript,
+            React.js, and APIs to build responsive and dynamic user interfaces.
+            Integrated real-time data fetching and voice recognition features
+            for enhanced interactivity. Focused on clean UI/UX design, ensuring
+            cross-device compatibility and fast performance. Demonstrated strong
+            full-stack development skills across a wide range of practical use
+            cases.
+          </p>
+          <a
+            href="https://dscoder1.github.io/My-All-Project/"
+            target="_blank"
+            class="github-link"
+          >
+            View on GitHub
+          </a>
+        </div>
+        <!-- Copy and modify this block for Project 2 to 6 -->
+      </div>
+    </section>
+
+    <section id="top-projects">
+      <h1 class="section-title">Some Winning Projects</h1>
+      <div class="projects-container">
+        <!-- Repeat this block for each project -->
+        <div class="project-card">
+          <h2 class="project-title">Swachh Bharat <span>(IIT BHU)</span> </h2>
+          <div class="project-images">
+            <img src="images/SwachhBharat1.png" alt="Swachh Bharat Project" />
+            <img src="images/SwachhBharat2.png" alt="Swachh Bharat Project" />
+            <img src="images/SwachhBharat3.png" alt="Swachh Bharat Project" />
+            <img src="images/SwachhBharat4.png" alt="Swachh Bharat Project" />
+          </div>
+          <p class="project-desc">
+            Developed a Smart City Management System using React.js, Node.js,
+            and MongoDB to enable citizens to report urban issues like waste,
+            water quality, and infrastructure problems. Implemented real-time
+            location-based reporting with SMS notifications and Air Quality
+            Index (AQI) updates. Integrated secure user authentication,
+            complaint categorization, and fraud detection with account
+            suspension logic. Enabled analytics for issue trends, helping
+            authorities prioritize responses and enhance urban management
+            efficiency.
+          </p>
+          <a
+            href="https://github.com/yourusername/project1"
+            target="_blank"
+            class="github-link"
+          >
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h2 class="project-title">SocioUse <span>(Amity University)</span> </h2>
+          <div class="project-images">
+            <img src="images/SocioUse1.png" alt="Socio Use Project" />
+            <img src="images/SocioUse2.png" alt="Socio Use Project" />
+            <img src="images/SocioUse3.png" alt="Socio Use Project" />
+            <img src="images/SocioUse4.png" alt="Socio Use Project" />
+          </div>
+          <p class="project-desc">
+            Built a full-featured real-time social media web app using the MERN
+            stack, enabling users to post, like, comment, and upload videos.
+            Implemented real-time chat and calling features, along with user
+            follow system and dynamic profile updates. Integrated social sharing
+            to platforms like Facebook, WhatsApp, LinkedIn, and Instagram.
+            Ensured seamless live updates across all features using sockets and
+            efficient state management.
+          </p>
+          <a
+            href="https://github.com/dscoder1/SocialMediaWebsite"
+            target="_blank"
+            class="github-link"
+          >
+            View on GitHub
+          </a>
+        </div>
+        <div class="project-card">
+          <h2 class="project-title">Alumni Student Mentorship <span>(Amity University)</span> </h2>
+          <div class="project-images">
+            <img src="images/Mentorship1.png" alt="Student Alumni Mentorship" />
+            <img src="images/Mentorship2.png" alt="Student Alumni Mentorship" />
+            <img src="images/Mentorship3.png" alt="Student Alumni Mentorship" />
+            <img src="images/Mentorship4.png" alt="Student Alumni Mentorship" />
+          </div>
+          <p class="project-desc">
+            Built an MERN alumni mentorship platform where students can access
+            curated job search playlists based on their interests. Enabled
+            secure one-on-one video calls between students and alumni using
+            unique session links. Developed an admin panel for managing student
+            and alumni profiles and monitoring platform activity. Designed the
+            system to enhance career guidance and streamline student-alumni
+            interaction.
+          </p>
+          <a
+            href="https://github.com/dscoder1/StudentAlumniMentorship"
+            target="_blank"
+            class="github-link"
+          >
+            View on GitHub
+          </a>
+        </div>
+
+        <!-- Copy and modify this block for Project 2 to 6 -->
       </div>
     </section>
 
