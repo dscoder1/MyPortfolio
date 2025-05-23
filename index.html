@@ -15,20 +15,31 @@
       <h1 id="heading">Portfolio</h1>
       <div>
         <ul class="navContent">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about" id="about-link">About</a></li>
-          <li>
-            <a href="https://dscoder1.github.io/My-All-Project/">Projects</a>
+          <div id="homeContainer">
+          <li><a href="#" id="home-link">Home</a></li>
+          </div>
+          <div id="aboutContainer">
+<li><a href="#about" id="about-link">About</a></li>
+          </div>
+          <div id="projectsContainer">
+ <li>
+          
+            <a href="https://dscoder1.github.io/My-All-Project/" id="projects-link">Projects</a>
           </li>
+          </div>
+         
+          <div id="contactContainer">
           <li><a href="#contact" id="contact-link">Contact</a></li>
+
+          </div>
         </ul>
       </div>
     </div>
     <div class="main">
       <div class="left">
-        <p id="content">This Is My Portfolio Website</p>
+        <!-- <p id="content">This Is My Portfolio Website</p> -->
         <br />
-        <p id="name">Hii, I'm Divya Shakti</p>
+        <p id="name">Hii, I'm <span id="myname">Divya Shakti</span></p>
         <br />
         <div class="text">
           <p id="what">Full Stack Developer | Python App Developer</p>
@@ -139,10 +150,10 @@
         <div class="project-card">
           <h2 class="project-title">Swachh Bharat</h2>
           <div class="project-images">
-            <img src="SwachhBharat1.png" alt="Swachh Bharat Project" />
-            <img src="SwachhBharat2.png" alt="Swachh Bharat Project" />
-            <img src="SwachhBharat3.png" alt="Swachh Bharat Project" />
-            <img src="SwachhBharat4.png" alt="Swachh Bharat Project" />
+            <img src="images/SwachhBharat1.png" alt="Swachh Bharat Project" />
+            <img src="images/SwachhBharat2.png" alt="Swachh Bharat Project" />
+            <img src="images/SwachhBharat3.png" alt="Swachh Bharat Project" />
+            <img src="images/SwachhBharat4.png" alt="Swachh Bharat Project" />
           </div>
           <p class="project-desc">
             Developed a Smart City Management System using React.js, Node.js,
@@ -166,10 +177,10 @@
         <div class="project-card">
           <h2 class="project-title">AgroWorld</h2>
           <div class="project-images">
-            <img src="AgroWorld1.png" alt="Agro World Project" />
-            <img src="AgroWorld2.png" alt="Agro World Project" />
-            <img src="AgroWorld3.png" alt="Agro World Project" />
-            <img src="AgroWorld4.png" alt="Agro World Project" />
+            <img src="images/AgroWorld1.png" alt="Agro World Project" />
+            <img src="images/AgroWorld2.png" alt="Agro World Project" />
+            <img src="images/AgroWorld3.png" alt="Agro World Project" />
+            <img src="images/AgroWorld4.png" alt="Agro World Project" />
           </div>
           <p class="project-desc">
             Developed a MERN web platform enabling farmers to sell and purchase
@@ -192,10 +203,10 @@
         <div class="project-card">
           <h2 class="project-title">SocioUse</h2>
           <div class="project-images">
-            <img src="SocioUse1.png" alt="Socio Use Project" />
-            <img src="SocioUse2.png" alt="Socio Use Project" />
-            <img src="SocioUse3.png" alt="Socio Use Project" />
-            <img src="SocioUse4.png" alt="Socio Use Project" />
+            <img src="images/SocioUse1.png" alt="Socio Use Project" />
+            <img src="images/SocioUse2.png" alt="Socio Use Project" />
+            <img src="images/SocioUse3.png" alt="Socio Use Project" />
+            <img src="images/SocioUse4.png" alt="Socio Use Project" />
           </div>
           <p class="project-desc">
             Built a full-featured real-time social media web app using the MERN
@@ -217,10 +228,10 @@
         <div class="project-card">
           <h2 class="project-title">Alumni Student Mentorship</h2>
           <div class="project-images">
-            <img src="Mentorship1.png" alt="Student Alumni Mentorship" />
-            <img src="Mentorship2.png" alt="Student Alumni Mentorship" />
-            <img src="Mentorship3.png" alt="Student Alumni Mentorship" />
-            <img src="Mentorship4.png" alt="Student Alumni Mentorship" />
+            <img src="images/Mentorship1.png" alt="Student Alumni Mentorship" />
+            <img src="images/Mentorship2.png" alt="Student Alumni Mentorship" />
+            <img src="images/Mentorship3.png" alt="Student Alumni Mentorship" />
+            <img src="images/Mentorship4.png" alt="Student Alumni Mentorship" />
           </div>
           <p class="project-desc">
             Built an MERN alumni mentorship platform where students can access
@@ -242,10 +253,10 @@
         <div class="project-card">
           <h2 class="project-title">Flood Alert</h2>
           <div class="project-images">
-            <img src="Flood1.png" alt="Flood Alert Project" />
-            <img src="Flood2.png" alt="Flood Alert Project" />
-            <img src="Flood3.png" alt="Flood Alert Project" />
-            <img src="Flood4.png" alt="Flood Alert Project" />
+            <img src="images/Flood1.png" alt="Flood Alert Project" />
+            <img src="images/Flood2.png" alt="Flood Alert Project" />
+            <img src="images/Flood3.png" alt="Flood Alert Project" />
+            <img src="images/Flood4.png" alt="Flood Alert Project" />
           </div>
           <p class="project-desc">
             Built a Flood Alert and Emergency Reporting Website enabling users
@@ -267,10 +278,10 @@
         <div class="project-card">
           <h2 class="project-title">Other Projects</h2>
           <div class="project-images">
-            <img src="Project1.png" alt="Projects Image" />
-            <img src="Project2.png" alt="Projects Image" />
-            <img src="Project3.png" alt="Projects Image" />
-            <img src="Project4.png" alt="Projects Image" />
+            <img src="images/Project1.png" alt="Projects Image" />
+            <img src="images/Project2.png" alt="Projects Image" />
+            <img src="images/Project3.png" alt="Projects Image" />
+            <img src="images/Project4.png" alt="Projects Image" />
           </div>
           <p class="project-desc">
             Developed multiple web applications including a code editor, voice
@@ -302,10 +313,10 @@
         <div class="project-card">
           <h2 class="project-title">Swachh Bharat <span>(IIT BHU)</span> </h2>
           <div class="project-images">
-            <img src="SwachhBharat1.png" alt="Swachh Bharat Project" />
-            <img src="SwachhBharat2.png" alt="Swachh Bharat Project" />
-            <img src="SwachhBharat3.png" alt="Swachh Bharat Project" />
-            <img src="SwachhBharat4.png" alt="Swachh Bharat Project" />
+            <img src="images/SwachhBharat1.png" alt="Swachh Bharat Project" />
+            <img src="images/SwachhBharat2.png" alt="Swachh Bharat Project" />
+            <img src="images/SwachhBharat3.png" alt="Swachh Bharat Project" />
+            <img src="images/SwachhBharat4.png" alt="Swachh Bharat Project" />
           </div>
           <p class="project-desc">
             Developed a Smart City Management System using React.js, Node.js,
@@ -330,10 +341,10 @@
         <div class="project-card">
           <h2 class="project-title">SocioUse <span>(Amity University)</span> </h2>
           <div class="project-images">
-            <img src="SocioUse1.png" alt="Socio Use Project" />
-            <img src="SocioUse2.png" alt="Socio Use Project" />
-            <img src="SocioUse3.png" alt="Socio Use Project" />
-            <img src="SocioUse4.png" alt="Socio Use Project" />
+            <img src="images/SocioUse1.png" alt="Socio Use Project" />
+            <img src="images/SocioUse2.png" alt="Socio Use Project" />
+            <img src="images/SocioUse3.png" alt="Socio Use Project" />
+            <img src="images/SocioUse4.png" alt="Socio Use Project" />
           </div>
           <p class="project-desc">
             Built a full-featured real-time social media web app using the MERN
@@ -355,10 +366,10 @@
         <div class="project-card">
           <h2 class="project-title">Alumni Student Mentorship <span>(Amity University)</span> </h2>
           <div class="project-images">
-            <img src="Mentorship1.png" alt="Student Alumni Mentorship" />
-            <img src="Mentorship2.png" alt="Student Alumni Mentorship" />
-            <img src="Mentorship3.png" alt="Student Alumni Mentorship" />
-            <img src="Mentorship4.png" alt="Student Alumni Mentorship" />
+            <img src="images/Mentorship1.png" alt="Student Alumni Mentorship" />
+            <img src="images/Mentorship2.png" alt="Student Alumni Mentorship" />
+            <img src="images/Mentorship3.png" alt="Student Alumni Mentorship" />
+            <img src="images/Mentorship4.png" alt="Student Alumni Mentorship" />
           </div>
           <p class="project-desc">
             Built an MERN alumni mentorship platform where students can access
@@ -407,7 +418,8 @@
         <div id="response-message"></div>
       </div>
     </section>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="index.js"></script>
   </body>
 </html>
