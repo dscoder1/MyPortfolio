@@ -1,3 +1,25 @@
+// var tl=gsap.timeline()
+// tl.from("li #home-link",{
+//     scale:10,
+//     duration:1
+// })
+// tl.from("li #about-link",{
+//     duration:1,
+//     scale:10
+// })
+// tl.from("li #projects-link",{
+//     duration:1,
+//     scale:10
+// })
+// tl.from("li #contact-link",{
+//     duration:1,
+//     scale:10
+// })
+// gsap.from(".left",{
+//     opacity:-10,
+//     scale:10,
+    
+// })
 gsap.from(".about-card",{
     x:-5000,
     scrollTrigger:
@@ -9,6 +31,7 @@ gsap.from(".about-card",{
         scrub:1
     }
 })
+
 var tl=gsap.timeline()
 tl.from("#heading",{
     y:1200,
@@ -30,63 +53,94 @@ tl.from("#contactContainer",{
        x:-10000,
 
 })
+  document.querySelector('.back-to-top').addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }); 
+  const name = "Divya Shakti";
+  const typedSpan = document.getElementById("typed-name");
+  let index = 0;
 
-const textElement = document.getElementById("name");
-const text = textElement.textContent;  
+  function typeWriter() {
+    if (index < name.length) {
+      typedSpan.textContent += name.charAt(index);
+      index++;
+      setTimeout(typeWriter, 150); // speed of typing
+    } else {
+      setTimeout(() => {
+        typedSpan.textContent = "";
+        index = 0;
+        typeWriter(); // start again
+      }, 2000); // delay before repeating
+    }
+  }
 
-function animateText() {
-    textElement.textContent = "";  
+  window.addEventListener("DOMContentLoaded", typeWriter);
 
-    text.split('').forEach((letter, index) => {
-        const span = document.createElement('span');
-        span.textContent = letter === ' ' ? '\u00A0' : letter;  
-        span.classList.add('letter');
-        span.style.animationDelay = `${index * 0.1}s`; 
-        textElement.appendChild(span);
-    });
+// const textElement = document.getElementById("name");
+// const text = textElement.textContent; // Get the text content of the paragraph
 
-     
-    setTimeout(() => {
-        animateText(); 
-    }, text.length * 100 + 1000);  
-}
+// function animateText() {
+//     textElement.textContent = ""; // Clear the original text
 
-animateText();
-const textElement1 = document.getElementById("what");
-const text1 = textElement1.textContent;  
+//     text.split('').forEach((letter, index) => {
+//         const span = document.createElement('span');
+//         span.textContent = letter === ' ' ? '\u00A0' : letter; // Use non-breaking space for visibility
+//         span.classList.add('letter');
+//         span.style.animationDelay = `${index * 0.1}s`; // Delay for each letter
+//         textElement.appendChild(span);
+//     });
 
-function animateText1() {
-    textElement1.textContent = "";  
+//     // Reset the animation after a delay equal to the total animation time
+//     setTimeout(() => {
+//         animateText(); // Call the function again to restart the animation
+//     }, text.length * 100 + 1000); // Total time for animation + 1 second pause
+// }
 
-    text1.split('').forEach((letter, index) => {
-        const span = document.createElement('span');
-        span.textContent = letter === ' ' ? '\u00A0' : letter;  
-        span.classList.add('letter');
-        span.style.animationDelay = `${index * 0.1}s`;  
-        textElement1.appendChild(span);
-    });
+// // Start the animation
+// animateText();
+// const textElement1 = document.getElementById("what");
+// const text1 = textElement1.textContent; // Get the text content of the paragraph
 
-     
-    setTimeout(() => {
-        animateText1(); 
-    }, text.length * 100 + 1000); 
-}
+// function animateText1() {
+//     textElement1.textContent = ""; // Clear the original text
 
-animateText1();
+//     text1.split('').forEach((letter, index) => {
+//         const span = document.createElement('span');
+//         span.textContent = letter === ' ' ? '\u00A0' : letter; // Use non-breaking space for visibility
+//         span.classList.add('letter');
+//         span.style.animationDelay = `${index * 0.1}s`; // Delay for each letter
+//         textElement1.appendChild(span);
+//     });
+
+//     // Reset the animation after a delay equal to the total animation time
+//     setTimeout(() => {
+//         animateText1(); // Call the function again to restart the animation
+//     }, text.length * 100 + 1000); // Total time for animation + 1 second pause
+// }
+
+// // Start the animation
+// animateText1();
 
 document.getElementById('contact-link').addEventListener('click', function(event) {
-    event.preventDefault();  
+    event.preventDefault();  // Prevent default anchor behavior
+
+    // Get the services section
     var contactSection = document.getElementById('contact');
 
-    contactSection.style.display = "block";  
-    contactSection.scrollIntoView({ behavior: 'smooth' }); 
+    // Show the services section and scroll to it
+    contactSection.style.display = "block";  // Make the services section visible
+    contactSection.scrollIntoView({ behavior: 'smooth' });  // Scroll smoothly to the services section
 });
 
 
 document.getElementById('about-link').addEventListener('click', function(event) {
-    event.preventDefault(); 
+    event.preventDefault();  // Prevent default anchor behavior
+  
+    // Get the services section
     var contactSection = document.getElementById('about');
   
-    contactSection.style.display = "block";  
-    contactSection.scrollIntoView({ behavior: 'smooth' });  
+    // Show the services section and scroll to it
+    contactSection.style.display = "block";  // Make the services section visible
+    contactSection.scrollIntoView({ behavior: 'smooth' });  // Scroll smoothly to the services section
   }); 
