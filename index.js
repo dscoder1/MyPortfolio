@@ -1,3 +1,36 @@
+gsap.from(".about-card",{
+    x:-5000,
+    scrollTrigger:
+    {
+        trigger:".about-container .about-card",
+        scroller:"body",
+        start:"top 90%",
+        end:"bottom 90%",
+        scrub:1
+    }
+})
+var tl=gsap.timeline()
+tl.from("#heading",{
+    y:1200,
+    // scrollTrigger:".navContent #heading"
+})
+tl.from("#homeContainer",{
+       x:-10000,
+
+})
+tl.from("#aboutContainer",{
+       x:-10000,
+
+})
+tl.from("#projectsContainer",{
+       x:-10000,
+
+})
+tl.from("#contactContainer",{
+       x:-10000,
+
+})
+
 const textElement = document.getElementById("name");
 const text = textElement.textContent;  
 
