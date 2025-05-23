@@ -52,9 +52,10 @@ body {
 #what {
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
-    animation: changeTextColor 5s infinite;
+    color: white;
+    /* animation: changeTextColor 5s infinite; */
 }
-
+/* 
 @keyframes changeTextColor {
     0% {
         color: #ff0000;  
@@ -73,7 +74,7 @@ body {
     }
 }
 
-
+ */
 
 .about-page{
 padding: 20px;
@@ -102,7 +103,7 @@ li {
 a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #heading {
@@ -128,17 +129,28 @@ a {
 
 #name {
     font-size: 60px;
-    color: #ffd6ba;
+    color: white;
     margin-left: 20px;
 }
 
 #what {
     font-size: 30px;
-    color: #ffd6ba;
+    color: white;
     margin-left: 20px;
 }
+#typed-name::after {
+  content: '|';
+  animation: blink 0.7s infinite;
+  margin-left: 2px;
+  color: #f39c12;
+}
 
-@keyframes bounce {
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
     }
@@ -148,7 +160,7 @@ a {
     60% {
         transform: translateY(-75px);
     }
-}
+} */
 
 #portimage {
     height: 400px;
@@ -479,9 +491,9 @@ textarea {
     height: 180px;
   }
 }
-span{
-    color: red;
-}
+ span{
+    color: orange;
+ }
 .about-container {
   display: flex;
   flex-wrap: wrap;
@@ -518,3 +530,122 @@ span{
   list-style-type: circle;
   margin: 5px 0;
 }
+/* ========== Footer Styling ========== */
+
+.footer {
+    background-color: #3a0ca3;
+  color: #ffffff;
+  padding: 40px 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  margin: 20px;
+}
+
+.footer-column h3 {
+  color: #f39c12;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.footer-column p,
+.footer-column ul,
+.footer-column a {
+  color: #ddd;
+  font-size: 20px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a:hover {
+  color: #f39c12;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f39c12;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  margin-top: 30px;
+  font-size: 25px;
+  color: #999;
+}
+
+.back-to-top {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #f39c12;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.back-to-top:hover {
+  color: #ffffff;
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .social-icons a {
+    margin: 0 10px;
+  }
+}
+#portimage {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#portimage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 767px) {
+    #portimage {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
